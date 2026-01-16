@@ -1,32 +1,23 @@
-import { StyleSheet, Text, View, TextInput, Button } from "react-native";
+import react from "react";
+import { StyleSheet, Text, View, Button} from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.inputContainer}>
-        <TextInput style={styles.textInput} placeholder="Enter text here" />
-        <Button title="Submit" />
-      </View>
-      <View>
-        <Text>Hello, World!</Text>
-      </View>
+      <Text style={styles.title}>Hello React Native </Text>
+      <Text>Java Script </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 50,
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#fff",
   },
-  inputContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  textInput: {
-    borderWidth: 1,
-    borderColor: "#cccccc",
-    width: "80%",
-    marginRight: 10,
-    padding: 8,
-  },
+  title: {
+    fontSize: 25,
+  }
 });
