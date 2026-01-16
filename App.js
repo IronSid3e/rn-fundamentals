@@ -1,20 +1,18 @@
 import React from "react";
-import { StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, View } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <View>
 
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
-    fontSize: 20,
-    backgroundColor: "yellow",
-    marginVertical: 5,
-    padding: 10,
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
