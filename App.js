@@ -1,10 +1,10 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 
 export default function App() {
   return (
-    <View>
-
+    <View style = {styles.container}>
+      <Text style={{fontSize: 25}}>Hello </Text>
     </View>
   );
 }
@@ -14,5 +14,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: '#e90fd6'
   },
 });
