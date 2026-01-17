@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const UserCard = ({ name, age, job }) => {
+const UserCard = ({ name, age, job }) => { //export diye klasik şekilde de yapılabilir aynı şey
   return (
     <View style={styles.card}>
       <Text style={styles.name}>{name}</Text>
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderLeftWidth: 5,
     borderLeftColor: '#3498db',
-    // Gölge ayarları
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
