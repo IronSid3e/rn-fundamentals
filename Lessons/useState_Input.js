@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import React, { useState } from "react";
 
-export default function App() {
+export default function useState_Input() {
   const [password, setPassword] = useState("");
   return (
     <View style={styles.main}>
@@ -31,3 +31,4 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 });
+
